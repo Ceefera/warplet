@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 240 10% 4%;
+    --foreground: 0 0% 100%;
+
+    --card: 240 8% 8%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 240 8% 8%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 195 100% 50%;
+    --primary-foreground: 240 10% 4%;
+
+    --secondary: 260 60% 60%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 240 6% 15%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 180 100% 50%;
+    --accent-foreground: 240 10% 4%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 6% 15%;
+    --input: 240 6% 15%;
+    --ring: 195 100% 50%;
+
+    --radius: 0.75rem;
+    
+    --vault-bg: 240 10% 4%;
+    --vault-surface: 240 8% 8%;
+    --vault-glass: 240 6% 12%;
+    --electric-blue: 195 100% 50%;
+    --neon-cyan: 180 100% 50%;
+    --soft-violet: 260 60% 60%;
+    --glow-primary: 195 100% 50%;
+    --glow-secondary: 260 60% 60%;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 240 10% 4%;
+    --foreground: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-orbitron;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  .glow-border {
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.3), 
+                inset 0 0 20px rgba(0, 191, 255, 0.1);
+  }
+  
+  .grid-lines {
+    background-image: 
+      linear-gradient(rgba(0, 191, 255, 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 191, 255, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+}
