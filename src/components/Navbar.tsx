@@ -18,7 +18,7 @@ const Navbar = () => {
                       bg-white/20 backdrop-blur-lg shadow-md rounded-b-xl transition-colors">
         {/* Logo */}
         <NavLink to="/" className="text-2xl font-black text-primary">
-          WARPLET
+          WARPLET LEGOS
         </NavLink>
 
         {/* Desktop Links */}

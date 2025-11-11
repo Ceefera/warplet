@@ -13,6 +13,15 @@ import WarpletOg from "@/assets/warpletog.png";
 import WarpletScenes from "@/assets/warpletscenes.png";
 import WarpletSmash from "@/assets/warpletsmash.png";
 import WarpletGame from "@/assets/warpletgame.png";
+import WarpletArb from "@/assets/arblets.png";
+import WarpletBaby from "@/assets/babywarplet.png";
+import WarplETH from "@/assets/warpleth.png";
+import WarpletMfers from "@/assets/warpletmfers.png";
+import WarpletNoun from "@/assets/warpletnoun.png";
+import WarpletCast from "@/assets/wecast.png";
+import WarpletMu from "@/assets/warpletmu.png";
+import WarpletFc from "@/assets/warpletfc.png";
+
 
 const Index = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -28,29 +37,79 @@ const Index = () => {
           "Secure multi-sig treasury management with automated yield optimization",
         developer: "sayangel",
         image: WarpletOg,
-        imageUrl: "https://farcaster.xyz/warpletsai/0xfa3c1f94",
+        imageUrl: "https://farcaster.xyz/sayangel",
       },
       {
         title: "Warplet Scenes",
         description: "Onchain cinematic moments for the Warplet Universe",
         developer: "zahrash",
         image: WarpletScenes,
-        imageUrl: "https://example.com/scenes",
+        imageUrl: "https://farcaster.xyz/zahrash",
       },
       {
         title: "Warplet Smash or Dash",
         description: "Battle and dash through the Warplet metaverse",
-        developer: "mfbevan",
+        developer: "mfbevan.eth",
         image: WarpletSmash,
-        imageUrl: "https://example.com/smash",
+        imageUrl: "https://farcaster.xyz/mfbevan.eth/0x2e34d378",
       },
       {
         title: "Warplet (Un)official Game",
         description: "Community-created game experience for Warplet fans",
         developer: "mfbevan.eth",
         image: WarpletGame,
-        imageUrl: "https://example.com/game",
+        imageUrl: "https://warplets.farverse.games/warplettes/8932df7a-16bb-42c7-961c-9da85a2e7851",
       },
+      {
+        title: "Warplet Noun",
+        description: "Community-created game experience for Warplet fans",
+        developer: "markcarey",
+        image: WarpletNoun,
+        imageUrl: "https://farcaster.xyz/miniapps/Pvs6xfVCnvqn/warplet-nouns",
+      },
+      {
+        title: "Warplet Mfer",
+        description: "Community-created game experience for Warplet fans",
+        developer: "markcarey",
+        image: WarpletMfers,
+        imageUrl: "https://warpletmfers.frm.lol/warpletmfers/",
+      },
+      {
+        title: "Baby Warplette",
+        description: "Community-created game experience for Warplet fans",
+        developer: "markcarey",
+        image: WarpletBaby,
+        imageUrl: "https://warplets.farverse.games/warplettes/fc97ee36-1fb9-49c0-bdfd-ba130746a76c",
+      },
+      {
+        title: "Warpl(.)eth ENS",
+        description: "Community-created game experience for Warplet fans",
+        developer: "mvr",
+        image: WarplETH,
+        imageUrl: "https://farcaster.xyz/mvr/0xd94059ea",
+      },
+      {
+        title: "WeCast Warplets",
+        description: "Community-created game experience for Warplet fans",
+        developer: "chriscocreated",
+        image: WarpletCast,
+        imageUrl: "https://farcaster.xyz/miniapps/DLMNg-iBux-P/wecastwarplets-49k-mint",
+      },
+      {
+        title: "Mutant Warplette",
+        description: "Community-created game experience for Warplet fans",
+        developer: "mfbevan.eth",
+        image: WarpletMu,
+        imageUrl: "https://farcaster.xyz/miniapps/DLMNg-iBux-P/wecastwarplets-49k-mint",
+      },
+      {
+        title: "FCBCC",
+        description: "Community-created game experience for Warplet fans",
+        developer: "warplette",
+        image: WarpletFc,
+        imageUrl: "https://farcaster.xyz/miniapps/DLMNg-iBux-P/wecastwarplets-49k-mint",
+      },
+
     ],
     concept: [
       {
@@ -63,22 +122,24 @@ const Index = () => {
     ],
     derivative: [
       {
-        title: "DeFi Vault Dashboard",
+        title: "Arblet",
         description:
           "Analytics interface for Vault Protocol with real-time APY tracking",
-        developer: "datavis",
-        image: WarpletScenes,
-        imageUrl: "https://example.com/dashboard",
+        developer: "0xanas.eth",
+        image: WarpletArb,
+        imageUrl: "https://farcaster.xyz/miniapps/IxzbMlpQLNCZ/the-arblets",
       },
     ],
   };
 
   const builders = [
-    { name: "Angel", handle: "sayangel", contributions: 12 },
-    { name: "Zahrash", handle: "zahrash", contributions: 8 },
-    { name: "MF Bevan", handle: "mfbevan", contributions: 15 },
-    { name: "DataVis", handle: "datavis", contributions: 7 },
-  ];
+  { name: "Angel", handle: "sayangel", contributions: 12, profileUrl: "https://farcaster.xyz/sayangel" },
+  { name: "Zahrash", handle: "zahrash", contributions: 8, profileUrl: "https://farcaster.xyz/zahrash" },
+  { name: "MF Bevan", handle: "mfbevan.eth", contributions: 15, profileUrl: "https://farcaster.xyz/mfbevan.eth" },
+  { name: "DataVis", handle: "datavis", contributions: 7, profileUrl: "https://farcaster.xyz/datavis" },
+];
+
+
 
   // 🧠 Filter logic
   const filteredProducts = products[activeCategory].filter((p) =>
@@ -91,15 +152,27 @@ const Index = () => {
 
       {/* 🏠 Hero Section */}
       <section className="relative px-6 py-20 md:py-32 text-center">
-        <div className="max-w-7xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-black text-foreground mb-6 tracking-tight leading-tight">
-            WARPLET <span className="text-primary">UNIVERSE</span>
-          </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto font-light">
-            A secure vault for builders storing the future of Web3
-          </p>
-        </div>
-      </section>
+  <div className="max-w-7xl mx-auto">
+    <h1 className="text-5xl md:text-7xl font-black text-foreground mb-6 tracking-tight leading-tight">
+      WELCOME TO THE <span className="text-primary">WARPLET UNIVERSE</span>
+    </h1>
+    <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto font-light italic mb-8">
+      "The only things Warplets need are coffee, internet connection, and a safe space to dream with other Warplets.
+      Now ask yourself anon, are you a dreamer? If so, you are a Warplet."
+    </p>
+
+    <a
+      href="https://www.warplets.ai/" // 👉 replace with your desired URL
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block bg-primary text-primary-foreground px-8 py-3 rounded-xl font-semibold
+                 hover:bg-primary/90 transition-all shadow-[0_0_15px_rgba(0,191,255,0.4)] hover:shadow-[0_0_25px_rgba(0,191,255,0.6)]"
+    >
+      Learn More →
+    </a>
+  </div>
+</section>
+
 
       {/* 🌟 Featured Carousel */}
       {activeCategory === "featured" && (

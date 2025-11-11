@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { X, Upload } from "lucide-react";
+import { X } from "lucide-react";
+import emailjs from "@emailjs/browser";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -14,17 +15,40 @@ const SubmitIdeaModal = ({ isOpen, onClose }: SubmitIdeaModalProps) => {
     handle: "",
     title: "",
     description: "",
-    link: ""
+    link: "",
   });
+
+  const [isSending, setIsSending] = useState(false);
+  const [successMessage, setSuccessMessage] = useState("");
 
   if (!isOpen) return null;
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Storing idea:", formData);
-    // Reset form and close
-    setFormData({ handle: "", title: "", description: "", link: "" });
-    onClose();
+    setIsSending(true);
+    setSuccessMessage("");
+
+    try {
+      await emailjs.send(
+        "service_g9gtrfg", // ✅ your service ID
+        "template_9fgln9x", // ✅ your template ID
+        formData,
+        "3wKv2Lf_3HlhkXjmo" // ✅ your public key
+      );
+
+      setSuccessMessage("✅ Idea sent successfully!");
+      setFormData({ handle: "", title: "", description: "", link: "" });
+
+      setTimeout(() => {
+        setSuccessMessage("");
+        onClose();
+      }, 2000);
+    } catch (error) {
+      console.error("Email sending failed:", error);
+      setSuccessMessage("❌ Failed to send idea. Please try again.");
+    } finally {
+      setIsSending(false);
+    }
   };
 
   return (
@@ -42,10 +66,10 @@ const SubmitIdeaModal = ({ isOpen, onClose }: SubmitIdeaModalProps) => {
         <div className="mb-6">
           <h2 className="text-2xl font-bold text-foreground mb-2 flex items-center gap-2">
             <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-            Add to Vault
+            Add to Directory
           </h2>
           <p className="text-sm text-muted-foreground">
-            Store your idea in the Warplet Universe
+            Submit a Warplet-based project to the Warplet Legos. Add your idea to our Universe Catalog.
           </p>
         </div>
 
@@ -66,7 +90,7 @@ const SubmitIdeaModal = ({ isOpen, onClose }: SubmitIdeaModalProps) => {
 
           <div>
             <label className="block text-sm font-medium text-foreground mb-2">
-              Title
+              Product Name
             </label>
             <Input
               value={formData.title}
@@ -93,32 +117,34 @@ const SubmitIdeaModal = ({ isOpen, onClose }: SubmitIdeaModalProps) => {
 
           <div>
             <label className="block text-sm font-medium text-foreground mb-2">
-              Link or File
+              Website or Miniapp Link
             </label>
-            <div className="flex gap-2">
-              <Input
-                value={formData.link}
-                onChange={(e) => setFormData({ ...formData, link: e.target.value })}
-                placeholder="https://..."
-                className="bg-background/50 border-primary/20 focus:border-primary"
-              />
-              <Button
-                type="button"
-                variant="outline"
-                size="icon"
-                className="border-primary/20 hover:border-primary hover:bg-primary/10"
-              >
-                <Upload className="w-4 h-4" />
-              </Button>
-            </div>
+            <Input
+              value={formData.link}
+              onChange={(e) => setFormData({ ...formData, link: e.target.value })}
+              placeholder="https://..."
+              className="bg-background/50 border-primary/20 focus:border-primary"
+            />
           </div>
+
+          {/* Success or Error Message */}
+          {successMessage && (
+            <p
+              className={`text-sm text-center ${
+                successMessage.startsWith("✅") ? "text-green-400" : "text-red-400"
+              }`}
+            >
+              {successMessage}
+            </p>
+          )}
 
           {/* Submit button */}
           <Button
             type="submit"
+            disabled={isSending}
             className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold shadow-[0_0_20px_rgba(0,191,255,0.4)] hover:shadow-[0_0_30px_rgba(0,191,255,0.6)] transition-all"
           >
-            Store Idea
+            {isSending ? "Sending..." : "Store Idea"}
           </Button>
         </form>
       </div>
