@@ -16,7 +16,7 @@ import {
 import AnimatedGrid from "@/components/AnimatedGrid";
 
 const categories = [
-  { icon: Handshake, label: "Ape Services" },
+  { icon: Handshake, label: "Warplet Services" },
   { icon: Shirt, label: "Apparel" },
   { icon: Package, label: "Packaged Goods or Food" },
   { icon: CupSoda, label: "Beverage" },
