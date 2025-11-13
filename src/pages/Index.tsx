@@ -23,6 +23,7 @@ import WarpletMu from "@/assets/warpletmu.png";
 import WarpletFc from "@/assets/warpletfc.png";
 import WarpletWafu from "@/assets/warpwafu.png";
 import WarpletWord from "@/assets/wordlets.png";
+import WarpletBlnd from "@/assets/warpblnd.png";
 
 
 const Index = () => {
@@ -110,6 +111,13 @@ const Index = () => {
         image: WarpletWord,
         imageUrl: "https://wordlets-frontend-production.up.railway.app/share/QmUVyXvm1HbPwTzYsutwuWr8f9pM2LwjaPFub4FKTjBuTj",
       },
+      {
+        title: "Blind Box warplets",
+        description: "Community-created game experience for Warplet fans",
+        developer: "gmonchain.eth",
+        image: WarpletBlnd,
+        imageUrl: "https://farcaster.xyz/gmonchain.eth",
+      },
 
     ],
     concept: [
@@ -144,13 +152,14 @@ const Index = () => {
   const builders = [
   { name: "Angel", handle: "sayangel", contributions: 1, profileUrl: "https://farcaster.xyz/sayangel" },
   { name: "Zahrash", handle: "zahrash", contributions: 1, profileUrl: "https://farcaster.xyz/zahrash" },
-  { name: "MF Bevan", handle: "mfbevan.eth", contributions: 3, profileUrl: "https://farcaster.xyz/mfbevan.eth" },
-  { name: "MF Bevan", handle: "markcarey", contributions: 3, profileUrl: "https://farcaster.xyz/markcarey" },
-  { name: "MF Bevan", handle: "mvr", contributions: 3, profileUrl: "https://farcaster.xyz/mvr" },
-  { name: "MF Bevan", handle: "chriscocreated", contributions: 3, profileUrl: "https://farcaster.xyz/chriscocreated" },
-  { name: "MF Bevan", handle: "eggman.eth", contributions: 3, profileUrl: "https://farcaster.xyz/eggman.eth" },
-  { name: "MF Bevan", handle: "0xspencer", contributions: 3, profileUrl: "https://farcaster.xyz/0xspencer" },
-  { name: "MF Bevan", handle: "warplette", contributions: 3, profileUrl: "https://farcaster.xyz/warplette" },
+  { name: "mfbevan", handle: "mfbevan.eth", contributions: 3, profileUrl: "https://farcaster.xyz/mfbevan.eth" },
+  { name: "markcarey", handle: "markcarey", contributions: 3, profileUrl: "https://farcaster.xyz/markcarey" },
+  { name: "mvr", handle: "mvr", contributions: 3, profileUrl: "https://farcaster.xyz/mvr" },
+  { name: "chriscocreated", handle: "chriscocreated", contributions: 3, profileUrl: "https://farcaster.xyz/chriscocreated" },
+  { name: "Eggman.eth", handle: "eggman.eth", contributions: 3, profileUrl: "https://farcaster.xyz/eggman.eth" },
+  { name: "00xspencer", handle: "0xspencer", contributions: 3, profileUrl: "https://farcaster.xyz/0xspencer" },
+  { name: "warplette", handle: "warplette", contributions: 3, profileUrl: "https://farcaster.xyz/warplette" },
+  { name: "Gm Onchain", handle: "gmonchain.eth", contributions: 3, profileUrl: "https://farcaster.xyz/gmonchain.eth" },
 ];
 
 
