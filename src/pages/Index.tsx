@@ -157,7 +157,7 @@ const Index = () => {
   { name: "mvr", handle: "mvr", contributions: 3, profileUrl: "https://farcaster.xyz/mvr" },
   { name: "chriscocreated", handle: "chriscocreated", contributions: 3, profileUrl: "https://farcaster.xyz/chriscocreated" },
   { name: "Eggman.eth", handle: "eggman.eth", contributions: 3, profileUrl: "https://farcaster.xyz/eggman.eth" },
-  { name: "00xspencer", handle: "0xspencer", contributions: 3, profileUrl: "https://farcaster.xyz/0xspencer" },
+  { name: "0xspencer", handle: "0xspencer", contributions: 3, profileUrl: "https://farcaster.xyz/0xspencer" },
   { name: "warplette", handle: "warplette", contributions: 3, profileUrl: "https://farcaster.xyz/warplette" },
   { name: "Gm Onchain", handle: "gmonchain.eth", contributions: 3, profileUrl: "https://farcaster.xyz/gmonchain.eth" },
 ];
