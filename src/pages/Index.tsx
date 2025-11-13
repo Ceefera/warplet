@@ -21,6 +21,8 @@ import WarpletNoun from "@/assets/warpletnoun.png";
 import WarpletCast from "@/assets/wecast.png";
 import WarpletMu from "@/assets/warpletmu.png";
 import WarpletFc from "@/assets/warpletfc.png";
+import WarpletWafu from "@/assets/warpwafu.png";
+import WarpletWord from "@/assets/wordlets.png";
 
 
 const Index = () => {
@@ -31,14 +33,6 @@ const Index = () => {
 
   const products = {
     featured: [
-      {
-        title: "Warplet OG",
-        description:
-          "Secure multi-sig treasury management with automated yield optimization",
-        developer: "sayangel",
-        image: WarpletOg,
-        imageUrl: "https://farcaster.xyz/sayangel",
-      },
       {
         title: "Warplet Scenes",
         description: "Onchain cinematic moments for the Warplet Universe",
@@ -103,21 +97,36 @@ const Index = () => {
         imageUrl: "https://farcaster.xyz/miniapps/DLMNg-iBux-P/wecastwarplets-49k-mint",
       },
       {
-        title: "FCBCC",
+        title: "waifulet",
         description: "Community-created game experience for Warplet fans",
-        developer: "warplette",
-        image: WarpletFc,
-        imageUrl: "https://farcaster.xyz/miniapps/DLMNg-iBux-P/wecastwarplets-49k-mint",
+        developer: "eggman.eth",
+        image: WarpletWafu,
+        imageUrl: "https://waifu.imgnai.com/s/waifulet/8",
+      },
+      {
+        title: "wordlets",
+        description: "Community-created game experience for Warplet fans",
+        developer: "0xspencer",
+        image: WarpletWord,
+        imageUrl: "https://wordlets-frontend-production.up.railway.app/share/QmUVyXvm1HbPwTzYsutwuWr8f9pM2LwjaPFub4FKTjBuTj",
       },
 
     ],
     concept: [
       {
-        title: "Cross-chain Bridge V2",
-        description: "Lightning-fast asset transfers with zero-knowledge proofs",
-        developer: "bridgemaster",
+        title: "Warplet OG",
+        description:
+          "Secure multi-sig treasury management with automated yield optimization",
+        developer: "sayangel",
         image: WarpletOg,
-        imageUrl: "https://example.com/cross-chain",
+        imageUrl: "https://farcaster.xyz/sayangel",
+      },
+      {
+        title: "FCBCC",
+        description: "Community-created game experience for Warplet fans",
+        developer: "warplette",
+        image: WarpletFc,
+        imageUrl: "https://farcaster.xyz/miniapps/DLMNg-iBux-P/wecastwarplets-49k-mint",
       },
     ],
     derivative: [
@@ -133,10 +142,9 @@ const Index = () => {
   };
 
   const builders = [
-  { name: "Angel", handle: "sayangel", contributions: 12, profileUrl: "https://farcaster.xyz/sayangel" },
-  { name: "Zahrash", handle: "zahrash", contributions: 8, profileUrl: "https://farcaster.xyz/zahrash" },
-  { name: "MF Bevan", handle: "mfbevan.eth", contributions: 15, profileUrl: "https://farcaster.xyz/mfbevan.eth" },
-  { name: "DataVis", handle: "datavis", contributions: 7, profileUrl: "https://farcaster.xyz/datavis" },
+  { name: "Angel", handle: "sayangel", contributions: 1, profileUrl: "https://farcaster.xyz/sayangel" },
+  { name: "Zahrash", handle: "zahrash", contributions: 1, profileUrl: "https://farcaster.xyz/zahrash" },
+  { name: "MF Bevan", handle: "mfbevan.eth", contributions: 3, profileUrl: "https://farcaster.xyz/mfbevan.eth" },
 ];
 
 
@@ -162,7 +170,7 @@ const Index = () => {
     </p>
 
     <a
-      href="https://www.warplets.ai/" // 👉 replace with your desired URL
+      href="https://www.warplets.ai/"
       target="_blank"
       rel="noopener noreferrer"
       className="inline-block bg-primary text-primary-foreground px-8 py-3 rounded-xl font-semibold
