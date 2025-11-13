@@ -24,6 +24,7 @@ import WarpletFc from "@/assets/warpletfc.png";
 import WarpletWafu from "@/assets/warpwafu.png";
 import WarpletWord from "@/assets/wordlets.png";
 import WarpletBlnd from "@/assets/warpblnd.png";
+import WarpletAvatar from "@/assets/warpavatar.png";
 
 
 const Index = () => {
@@ -136,6 +137,13 @@ const Index = () => {
         image: WarpletFc,
         imageUrl: "https://farcaster.xyz/miniapps/DLMNg-iBux-P/wecastwarplets-49k-mint",
       },
+      {
+        title: "Warplet Figma avatar",
+        description: "Community-created game experience for Warplet fans",
+        developer: "nicolaus",
+        image: WarpletFc,
+        imageUrl: "https://www.figma.com/community/file/1566652236823712868/warplet-avatar-ui-kit",
+      },
     ],
     derivative: [
       {
@@ -153,6 +161,7 @@ const Index = () => {
   { name: "Angel", handle: "sayangel", contributions: 1, profileUrl: "https://farcaster.xyz/sayangel" },
   { name: "Zahrash", handle: "zahrash", contributions: 1, profileUrl: "https://farcaster.xyz/zahrash" },
   { name: "mfbevan", handle: "mfbevan.eth", contributions: 3, profileUrl: "https://farcaster.xyz/mfbevan.eth" },
+  { name: "nicolaus", handle: "nicolaus", contributions: 3, profileUrl: "https://farcaster.xyz/nicolaus" },
   { name: "markcarey", handle: "markcarey", contributions: 3, profileUrl: "https://farcaster.xyz/markcarey" },
   { name: "mvr", handle: "mvr", contributions: 3, profileUrl: "https://farcaster.xyz/mvr" },
   { name: "chriscocreated", handle: "chriscocreated", contributions: 3, profileUrl: "https://farcaster.xyz/chriscocreated" },
