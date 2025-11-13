@@ -145,6 +145,12 @@ const Index = () => {
   { name: "Angel", handle: "sayangel", contributions: 1, profileUrl: "https://farcaster.xyz/sayangel" },
   { name: "Zahrash", handle: "zahrash", contributions: 1, profileUrl: "https://farcaster.xyz/zahrash" },
   { name: "MF Bevan", handle: "mfbevan.eth", contributions: 3, profileUrl: "https://farcaster.xyz/mfbevan.eth" },
+  { name: "MF Bevan", handle: "markcarey", contributions: 3, profileUrl: "https://farcaster.xyz/markcarey" },
+  { name: "MF Bevan", handle: "mvr", contributions: 3, profileUrl: "https://farcaster.xyz/mvr" },
+  { name: "MF Bevan", handle: "chriscocreated", contributions: 3, profileUrl: "https://farcaster.xyz/chriscocreated" },
+  { name: "MF Bevan", handle: "eggman.eth", contributions: 3, profileUrl: "https://farcaster.xyz/eggman.eth" },
+  { name: "MF Bevan", handle: "0xspencer", contributions: 3, profileUrl: "https://farcaster.xyz/0xspencer" },
+  { name: "MF Bevan", handle: "warplette", contributions: 3, profileUrl: "https://farcaster.xyz/warplette" },
 ];
 
 
