@@ -124,7 +124,7 @@ const Index = () => {
         title: "Religious Warplet",
         description: "Community-created game experience for Warplet fans",
         developer: "dxfareed",
-        image: WarpletBlnd,
+        image: WarpletRel,
         imageUrl: "https://relgious-warplet.vercel.app/",
       },
 
