@@ -25,6 +25,7 @@ import WarpletWafu from "@/assets/warpwafu.png";
 import WarpletWord from "@/assets/wordlets.png";
 import WarpletBlnd from "@/assets/warpblnd.png";
 import WarpletAvatar from "@/assets/warpavatar.png";
+import WarpletRel from "@/assets/warprel.png";
 
 
 const Index = () => {
@@ -119,6 +120,13 @@ const Index = () => {
         image: WarpletBlnd,
         imageUrl: "https://farcaster.xyz/gmonchain.eth",
       },
+      {
+        title: "Religious Warplet",
+        description: "Community-created game experience for Warplet fans",
+        developer: "dxfareed",
+        image: WarpletBlnd,
+        imageUrl: "https://relgious-warplet.vercel.app/",
+      },
 
     ],
     concept: [
@@ -169,6 +177,7 @@ const Index = () => {
   { name: "0xspencer", handle: "0xspencer", contributions: 1, profileUrl: "https://farcaster.xyz/0xspencer" },
   { name: "warplette", handle: "warplette", contributions: 1, profileUrl: "https://farcaster.xyz/warplette" },
   { name: "Gm Onchain", handle: "gmonchain.eth", contributions: 1, profileUrl: "https://farcaster.xyz/gmonchain.eth" },
+  { name: "Dxfareed", handle: "dxfareed", contributions: 1, profileUrl: "https://farcaster.xyz/dxfareed" },
 ];
 
 
