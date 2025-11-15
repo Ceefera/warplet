@@ -41,7 +41,7 @@ const Index = () => {
         description: "Onchain cinematic moments for the Warplet Universe",
         developer: "zahrash",
         image: WarpletScenes,
-        imageUrl: "https://farcaster.xyz/zahrash",
+        imageUrl: "https://www.warplets.ai/scenes",
       },
       {
         title: "Warplet Smash or Dash",
